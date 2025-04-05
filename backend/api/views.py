@@ -8,5 +8,5 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 
 class CreateUserView(generics.CreateAPIView):#auto create a new user from django
     queryset = User.objects.all()
-    serializer_class = User #Data to accept to create the user
+    serializer_class = UserSerializer #Data to accept to create the user
     permission_classes = [AllowAny] # Who can create a new user(anyone)
