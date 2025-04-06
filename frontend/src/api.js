@@ -3,10 +3,10 @@ import axios from "axios";
 import { ACCESS_TOKEN } from "./constants"
 
 //interceptor will intercept the headers and sort the headers out manually
-
+const apiUrl = "/choreo-apis/django-demo/backend/v1"
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL
+    baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl
 })
 
 
