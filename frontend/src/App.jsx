@@ -25,7 +25,7 @@ function App() {
             path="/home"
             element={
               <ProtectedRoute>
-                <Home /> //Will only allow access to Home if authorized
+                <Home />
               </ProtectedRoute>
             }
           />
